@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+
+
+        <color name="bluePrimaryDark">#048BFE</color>
+        <color name="bluePrimary">#2199FF</color>
+        <color name="bluePrimaryLight">#BADFFF</color>
+
+        <color name="list_item_title">#fff</color>
+        <color name="list_background">#edecec</color>
+        <color name="list_background_pressed">#992416</color>
+        <color name="list_divider">#272727</color>
+        <color name="counter_text_bg">#626262</color>
+        <color name="counter_text_color">#c5c4c4</color>
+
+        <color name="reaction_bar">#575a82</color>
+
+        <color name="PrimaryColor">#0e2e8c</color>
+        <color name="PrimaryDarkColor">#84c96f</color>
+        <color name="indicator">#ecd95a</color>
+
+        <color name="tab_color">#00FFFF</color>
+
+        <color name="colorPrimary">#00074f</color>
+        <color name="colorPrimaryDark">#04042e</color>
+        <color name="colorAccent">#ffffff</color>
+
+        <color name="twitter_color">#5fabdf</color>
+
+        <color name="white_text_a80">#CCFFFFFF</color>
+        <color name="white_text">#FFFFFFFF</color>
+        <color name="red">#ffff0000</color>
+        <color name="red2">#700808</color>
+        <color name="partly_transparent_60">#60808080</color>
+        <color name="dark_transparent_a80">#CC505050</color>
+        <color name="blackman">#000</color>
+
+        <color name="indigo">#f47878</color>
+        <color name="pink">#e43e78</color>
+        <color name="grey">#686767</color>
+        <color name="green">#3f9150</color>
+
+        <color name="twtt">#7abcfd</color>
+
+        <color name="primaryLight">#DCEDC8</color>
+        <color name="textPrimary">#212121</color>
+        <color name="textSecondary">#727272</color>
+        <color name="divider">#B6B6B6</color>
+
+        <color name="navigationBarColor">@android:color/black</color>
+        <color name="drawerArrowColor">@android:color/white</color>
+
+        <color name="flap">#ece9e9</color>
+
+</resources>

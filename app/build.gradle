@@ -1,0 +1,87 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    jcenter()
+    maven { url 'https://maven.fabric.io/public' }
+    mavenCentral()
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    repositories {
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        jcenter()
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/LICENSE.base64.txt'
+    }
+
+
+    defaultConfig {
+        applicationId "com.example.simpumind.trends"
+        minSdkVersion 17
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.2.0'
+    compile 'com.android.support:design:23.2.0'
+    compile 'com.android.support:cardview-v7:23.2.0'
+    compile 'com.android.support:recyclerview-v7:23.2.0'
+    compile 'com.github.ksoichiro:android-observablescrollview:1.6.0'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.github.pavlospt:roundedletterview:1.1'
+    compile 'com.google.code.gson:gson:2.4'
+    compile 'com.52inc:52Kit-core:0.4.1'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.squareup.retrofit:retrofit:1.6.0'
+    compile 'com.squareup:otto:1.3.5'
+    compile 'com.facebook.android:facebook-android-sdk:4.6.0'
+    compile 'com.thefinestartist:finestwebview:1.2.1'
+    compile 'org.apache.httpcomponents:httpclient:4.5'
+    compile 'com.github.satyan:sugar:1.4'
+    compile 'com.anupcowkur:reservoir:2.1'
+    compile 'uk.co.chrisjenx:calligraphy:2.2.0'
+    compile('com.crashlytics.sdk.android:crashlytics:2.5.5@aar') {
+        transitive = true;
+    }
+    compile('com.twitter.sdk.android:twitter:1.13.0@aar') {
+        transitive = true;
+    }
+    compile 'cz.msebera.android:httpclient:4.4.1.1'
+    compile project(':http-core-4.1')
+    compile project(':httpclient-4.2.3')
+}
